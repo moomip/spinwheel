@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spin Wheel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- WINNERS PANEL (left side) -->
+  <div id="winnersPanel">
+
+    <div id="winnersHeader">
+      <h3>Winners</h3>
+      <button id="hideWinnersBtn" class="tiny-btn">Hide</button>
+    </div>
+
+    <ul id="winnersList"></ul>
+
+    <div id="winnerButtons">
+      <button id="clearWinnersBtn">Remove All From List</button>
+      <button id="removeFromWheelBtn">Remove All From Spin</button>
+      <button id="autoRemoveBtn" class="auto-btn">Auto</button>
+    </div>
+
+  </div>
+
+  <div class="input-area">
+    <textarea id="bulkInput" placeholder="Paste items here, one per line"></textarea>
+    <button id="loadBtn">Load Items</button>
+
+    <input id="singleInput" placeholder="Type item and press Enter">
+  </div>
+
+  <div class="info-bar">
+    <span id="itemCount">Items: 0</span>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <div class="wheel-container">
+    <div class="wheel-mask"></div>
+    <div class="wheel" id="wheel">
+      <ul id="wheelList"></ul>
+    </div>
+  </div>
+
+  <button id="spinBtn">Spin Random</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
